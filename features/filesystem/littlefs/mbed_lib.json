@@ -13,12 +13,12 @@
     },
     "block_size": {
         "macro_name": "MBED_LFS_BLOCK_SIZE",
-        "value": 512,
+        "value": 32768,
         "help": "Size of an erasable block. This does not impact ram consumption and may be larger than the physical erase size. However, this should be kept small as each file currently takes up an entire block."
     },
     "lookahead": {
         "macro_name": "MBED_LFS_LOOKAHEAD",
-        "value": 512,
+        "value": 16384,
         "help": "Number of blocks to lookahead during block allocation. A larger lookahead reduces the number of passes required to allocate a block. The lookahead buffer requires only 1 bit per block so it can be quite large with little ram impact. Should be a multiple of 32."
     },
     "intrinsics": {
