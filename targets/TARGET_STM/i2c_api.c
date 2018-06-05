@@ -77,7 +77,7 @@ static I2C_HandleTypeDef* i2c_handles[I2C_NUM];
    not based on accurate values, they just guarantee that the application will
    not remain stuck if the I2C communication is corrupted. 
 */
-#define FLAG_TIMEOUT ((int)0x1000)
+#define FLAG_TIMEOUT ((int)0x10000)
 
 /* GENERIC INIT and HELPERS FUNCTIONS */
 
